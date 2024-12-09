@@ -1,6 +1,8 @@
-const heading=React.createElement("parent",{},[
-    React.createElement("child",{id:"heading"},[React.createElement("heading1",{},"hello from header1"),React.createElement("heading2",{},"hello from header2")]),
-    React.createElement("child",{id:"heading"},React.createElement("heading1",{},"hello from reactjs"))]);
+import React from "react";
+import ReactDOM from "react-dom";
+
+
+const heading=<h1 className="root">Namaste React</h1>
 const root=ReactDOM.createRoot(document.getElementById("root"));
 console.log(heading);
 root.render(heading);
